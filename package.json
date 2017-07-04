@@ -1,43 +1,29 @@
-{  "name"                       : "kpa"
-,  "version"                    : "0.0.2"
-,  "description"                : "to the only only npm"
-,  "main"                       : "server.js"
+{  "name"                       : "toc"
+,  "version"                    : "0.0.1"
+,  "description"                : "the_only_component-server"
+,  "main"                       : "ddserver.js"
 ,  "engines"                    : { "node" : ">= 0.10.0"
                                   , "npm"  : ">= 1.0.0"
                                   }
 ,  "dependencies"               : {}
 ,  "bundleDependencies"         : []
-,  "scripts"                    : { "wstart"        : "d:/nodejslatest/node.exe server.js"
-                                  , "wjs"           : "d:/nodejslatest/node.exe d:/REPOSITORIES/NPM/global/node_modules/babili/bin/babili.js server.js -o zserver.js --compact --minified --no-comments"
-                                  , "jade"          : "d:/nodejslatest/node.exe d:/REPOSITORIES/NPM/global/node_modules/jade/bin/jade.js source/jade/*.jade -o prod"
-                                  , "stylus"        : "d:/nodejslatest/node.exe d:/REPOSITORIES/NPM/global/node_modules/stylus/bin/stylus source/stylus/main.styl -o temp/main.css"
-                                  , "cssmin"        : "d:/nodejslatest/node.exe d:/REPOSITORIES/NPM/global/node_modules/cssmin/bin/cssmin temp/main.css > temp/main.min.css"
-                                  , "babili"        : "d:/nodejslatest/node.exe d:/REPOSITORIES/NPM/global/node_modules/babili/bin/babili.js source/script/analytics.js -o temp/analytics.min.js"
-                                  , "build:all"     : "stylus && cssmin && jade"
-                                  , "command"       : "-----------------------------------------------"
-                                  , "start"         : "node zserver.js"
-                                  , "clean"         : "rm -r prod/* && rm -r temp/*"
-
-                                  , "build:js"      : "echo 'npm as js script'  && babili source/script/monitor.js -o temp/monitor.min.js"
-                                  , "build:css"     : "echo 'npm as stylus script' && stylus source/stylus/main.styl --out temp/main.css && cssmin temp/main.css > temp/main.min.css"
-                                  , "build:jade"    : "echo 'npm as jade script' && jade source/jade/*.jade --out app"
-                                  , "build"         : "echo 'build all' && npm run build:css && npm run build:js && npm run build:jade"
+,  "scripts"                    : { "start"         : "node ddserver.js"
                                   }
-,  "config"                     : { "tabs"          : ["cfgfabs","fabs","commands","ledger","info","matb","blist","news"]
+,  "config"                     : { "tabs"          : []
                                   , "table"         : "fabs"
                                   , "data"          : "deflate"
                                   , "flatdata"      : "flat"
                                   , "flatintabs"    : []
                                   , "flatouttabs"   : []
-                                  , "webport"       : 8391
+                                  , "webport"       : 80
                                   , "udpport"       : 8877
                                   , "splkport"      : 8878
                                   , "splkhost"      : "localhost"
                                   , "host"          : "*"
                                   , "is_simulation" : false
-                                  , "is_qatool"     : true
+                                  , "is_qatool"     : false
                                   , "is_log"        : false
-                                  , "is_debug"      : true
+                                  , "is_debug"      : false
                                   , "is_splunklog"  : false
                                   , "path"          : "./"
                                   }
