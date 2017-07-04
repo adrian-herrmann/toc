@@ -1,13 +1,13 @@
 {  "name"                       : "toc"
 ,  "version"                    : "0.0.1"
 ,  "description"                : "the_only_component-server"
-,  "main"                       : "ddserver.js"
+,  "main"                       : "server.js"
 ,  "engines"                    : { "node" : ">= 0.10.0"
                                   , "npm"  : ">= 1.0.0"
                                   }
 ,  "dependencies"               : {}
 ,  "bundleDependencies"         : []
-,  "scripts"                    : { "start"         : "node ddserver.js"
+,  "scripts"                    : { "start"         : "node server.js"
                                   }
 ,  "config"                     : { "tabs"          : []
                                   , "table"         : "fabs"
@@ -15,7 +15,7 @@
                                   , "flatdata"      : "flat"
                                   , "flatintabs"    : []
                                   , "flatouttabs"   : []
-                                  , "webport"       : 80
+                                  , "webport"       : 8012
                                   , "udpport"       : 8877
                                   , "splkport"      : 8878
                                   , "splkhost"      : "localhost"
