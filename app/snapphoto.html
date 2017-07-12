@@ -33,7 +33,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 document.getElementById("snap")
 	.addEventListener("click", ()=> { context.drawImage(video, 0, 0, 320, 240)})
 ;
-ocument.getElementById("save")
+document.getElementById("save")
 	.addEventListener("click", ()=> { navigator.sendBeacon( 'http://x-addi.rhcloud.com/rest/myimage'
                       					      , JSON.stringify({img:canvas.toDataURL()})
                                                               )
