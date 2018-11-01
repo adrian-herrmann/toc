@@ -2,29 +2,33 @@
 ,  "version"                    : "0.0.1"
 ,  "description"                : "the_only_component-server"
 ,  "main"                       : "server.js"
-,  "engines"                    : { "node" : ">= 0.10.0"
-                                  , "npm"  : ">= 1.0.0"
+,  "engines"                    : { "node" : "*"
+                                  , "npm"  : "*"
                                   }
 ,  "dependencies"               : {}
 ,  "bundleDependencies"         : []
+,  "repository"                 : { "type": "git"
+                                  , "url" : "https://github.com/adrian-herrmann/toc.git" 
+                                  } 
+,  "license"                    : "MIT" 
 ,  "scripts"                    : { "start"         : "node server.js"
                                   }
 ,  "config"                     : { "tabs"          : []
-                                  , "table"         : "fabs"
-                                  , "data"          : "deflate"
+                                  , "zip"           : "deflate"
                                   , "flatdata"      : "flat"
                                   , "flatintabs"    : []
                                   , "flatouttabs"   : []
-                                  , "webport"       : 8012
-                                  , "udpport"       : 8877
-                                  , "splkport"      : 8878
-                                  , "splkhost"      : "localhost"
-                                  , "host"          : "*"
-                                  , "is_simulation" : false
-                                  , "is_qatool"     : false
-                                  , "is_log"        : false
-                                  , "is_debug"      : false
-                                  , "is_splunklog"  : false
-                                  , "path"          : "./"
+                                  , "first"         : "default"
+                                  , "webport"       : 8080
+                                  , "is_log"        : true
+                                  , "is_app"        : false
+                                  , "is_debug"      : true
+                                  , "is_data"       : false
+                                  , "is_backup"     : false
+                                  , "backup_time"   : 60000
+                                  , "build"         : "./"
+                                  , "app"           : "./"
+                                  , "data"          : "./"
+                                  , "login"         : "12.558 starts" 
                                   }
 }
